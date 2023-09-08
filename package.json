@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "print-text": "./printText.sh",
-    "print-html": "./printHTML.sh"
+    "print-html": "./printHTML.sh",
+    "print-pdf": "npm run print-html"
   },
   "author": "Joel Grayson <joel@joelgrayson.com> (https://github.com/JoelGrayson)",
   "license": "MIT",

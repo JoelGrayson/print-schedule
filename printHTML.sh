@@ -14,5 +14,7 @@ main();
 """
 
 echo "$instructions" | node > printing/schedule.html
-open printing/schedule.html
+# open printing/schedule.html
+wkhtmltopdf printing/schedule.html printing/schedule.pdf
+lp printing/schedule.pdf
 

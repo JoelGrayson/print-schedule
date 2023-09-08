@@ -14,5 +14,5 @@ main();
 """
 
 echo "$instructions" | node > printing/schedule.txt
-lp printing/formattedText.txt
+lp printing/schedule.txt
 
