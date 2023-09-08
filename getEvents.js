@@ -6,7 +6,7 @@ const process=require('process');
 const { authenticate }=require('@google-cloud/local-auth');
 const { google }=require('googleapis');
 
-module.exports=async ()=>{
+module.exports=async (calendarId='primary')=>{
     // If modifying these scopes, delete token.json.
     const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
     // The file token.json stores the user's access and refresh tokens, and is
@@ -72,7 +72,7 @@ module.exports=async ()=>{
     async function listEvents(auth) {
         const calendar=google.calendar({version: 'v3', auth});
         const res=await calendar.events.list({
-            calendarId: 'primary',
+            calendarId: calendarId,
             timeMin: (()=>{
                 const date=new Date();
                 date.setHours(0);
