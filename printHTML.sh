@@ -2,7 +2,7 @@
 
 instructions="""
 const getEvents=require('./getEvents');
-const formatEvents=require('./formatEventsText');
+const formatEvents=require('./formatEventsHTML');
 
 async function main() {
     const events=await getEvents();
@@ -13,6 +13,6 @@ async function main() {
 main();
 """
 
-echo "$instructions" | node > printing/schedule.txt
-lp printing/formattedText.txt
+echo "$instructions" | node > printing/schedule.html
+open printing/schedule.html
 

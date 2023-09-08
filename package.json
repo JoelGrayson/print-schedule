@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "print-text": "./printText.sh"
+    "print-text": "./printText.sh",
+    "print-html": "./printHTML.sh"
   },
   "author": "Joel Grayson <joel@joelgrayson.com> (https://github.com/JoelGrayson)",
   "license": "MIT",
