@@ -25,7 +25,7 @@ module.exports=events=>{
                     text-align: right;
                 }
                 .card .event-summary {
-                    width: 45ch;
+                    width: 44ch;
                     display: inline-block;
                 }
                 .card .end-time {
